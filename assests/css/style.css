@@ -1,46 +1,83 @@
-body{
+body {
     background: bisque;
     margin: 0px;
     padding: 0px;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    line-height: 150%;
+
 }
-.title-1 {
+h1 {
+    margin: 0px;
     color: white;
-    float: left;
-    width: 220px;
-    height:50px;
-    background: teal;
+    background: cadetblue;
     padding: 10px;
-    
-
+    width: 190px;
+    float: left;
+    margin-left: 130px;
 }
-
 nav {
-
-    float: left;
-    width: 100%;
-    height: 50px;
-    background: white;
+    background-color: white;
+    color: silver;
+    margin: 0px;
+    padding: 10px;
     text-align: right;
-
+    
     
 }
-
-
-.main-bio {
-
-    clear: both;
-    text-align: center;
-    margin: 0% 15% 0% 15%;
-    background: whitesmoke;
-    height: 550px;
-    padding: 20px;
+.container {
+    width: 1024px;
+    margin: 0 auto;
+    
+    
+}
+.main_bio {
+    background-color: white;
+    height: 400px;
+    margin-top: 20px;
+    width: 1024;
+    border: 1px white;
+    
 
 }
-
-#bio_image {
+.bio_image {
+    height: 200px;
+    width: 200px;
+}
+.main_bio,
+.bio_image,
+ p {
     float: left;
-    
-
 }
-
+.bio_image {
+    width: 20%;
+}
+p {
+    width: 70%;
+    margin-left: 20px;
+}
+.footer {
+    clear: both;
+    background-color: silver;
+    text-align: center;
+    border-top-color: 3px cadetblue;
+    flex-shrink: 0;
+    
+}
+#wake {
+    position: absolute;
+    
+}
+#movie {
+    position: absolute;
+    
+}
+#game {
+    position: absolute;
+}
+#moto {
+    position: absolute;
+}
+#game {
+    position: absolute;
+}
