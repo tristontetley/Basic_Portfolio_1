@@ -1,55 +1,130 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-us">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>About me</title>
-    <link rel="stylesheet" href="assests/css/style.css">
+    <title>About | Triston Tetley</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
+    <header id="masthead">
+        <div class="container">
+            <a href="index.html" id="logo">Triston Tetley</a>
+            <nav>
+                <a id="about" href="#">About</a>
+                <a id="portfolio" href="#">Portfolio</a>
+                <a id="contact" href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
 
-    <div class="header">
-        <header>
-            <h1>Triston Tetley</h1>
-        </header>
-    </div>
-    <nav>
-        <a href="index.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="contact.html">Contact</a>
-    </nav>
-    <div class="container">
+    <div id="about-page">
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>About Me</h1>
 
-        <div class="main_bio">
-            <div class="bio_header">
-                <h2>About Me</h2>
-            </div>
-            <img class="bio_image" src="assests/images/IMG_3053.JPG" alt="Triston Tetley">
-            <p>Hello World! My name is Triston Tetley. I am a very self-motivated and driven to set out and do
-                anything
-                that
-                I set my mind to. Everything that I get myself into whether intentional or just by being in the
-                right/wrong
-                place at the right/wrong time I give it my all. I don't settle for mediocre my best is all I have to
-                give.
-                Some of my favorite things to do when free time is available is go to the movies with my family, go
-                to
-                the
-                gym and try to crack poorly thought up dad jokes with elders at the gym. Since they seem to laugh at
-                those
-                things, and lastly my favorite thing to do is compete in competitive gaming tournaments.</p>
+                <img src="assets/images/0D452C1C-637F-4247-A330-6EBC83313ABE_1_105_c.jpeg" class="auth-image"
+                    alt="Your Name">
+
+                <p>My name is Triston Tetley and I am a full stack web developer. Without hesitation I'd say my favorite
+                    part of web development is the problem solving. That being said my passion is working with the
+                    back-end,
+                    because the front-end
+                    seems to have less freedom when it comes to how you make something work. While, in the back-end ten
+                    people can all create functions that make a program run. Yet, each and every one can be unique in
+                    it's
+                    own way. So I am striving to become better and better at the might JavaScript everyday! </p>
+
+
+
+            </section>
+
         </div>
     </div>
-    <div class="footer">
+    <div id="portfolio-page">
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Portfolio</h1>
 
-        <footer>
-            <p>Copyright</p>
-        </footer>
+                <div class="work">
+                    <img src="assets/images/download.jpeg" alt="Web Development">
+
+                    <h3>Web Development</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/competitive-gaming.jpg" alt="Competitive Gaming">
+
+                    <h3>Competitive Gaming</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/Movie Theatre.jpg" alt="Movies">
+
+                    <h3>Movies</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/candles.jpeg" alt="Candles">
+
+                    <h3>Candles</h3>
+                </div>
+                <div class="work">
+                    <img src="assets/images/snowboarding.jpeg" alt="Snowboarding">
+
+                    <h3>Snowboarding</h3>
+                </div>
+
+            </section>
+
+        </div>
+    </div>
+    <div id="contact-page">
+        <div id="main-container" class="container">
+            <section class="main-section">
+                <h1>Contact</h1>
+
+                <form id="contact-form">
+                    <ul>
+                        <li>
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" placeholder="Qui-Gon Jinn" required="required">
+                        </li>
+                        <li>
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" placeholder="JediMaster@republic.com"
+                                required="required">
+                        </li>
+                        <li>
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" required="required"></textarea>
+                        </li>
+                    </ul>
+                    <input type="submit">
+                </form>
+
+            </section>
+
+        </div>
+
     </div>
 
+    <footer>
+        <div class="container">
+            Copyright ©
+        </div>
+    </footer>
+
+
+    <script type="text/javascript" src="assets/javascript/portfolio.js"></script>
 </body>
 
 </html>
