@@ -3,13 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: 
-    url(../images/winter-background.jpg)
-    top center / 1920px 1200px
-     no-repeat                
-     fixed                    
-     padding-box              
-     content-box;
+    background: url(../images/winter-background.jpg) top center / 1920px 1200px no-repeat fixed padding-box content-box;
 }
 
 * {
@@ -198,4 +192,49 @@ input[type=submit] {
     cursor: pointer;
     background: #B0C4DE;
     border: 0 none;
+}
+
+@media screen and (max-width: 980px) {
+    body, footer {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    header {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    header {
+        width: 75%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    body {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    header {
+        width: 75%;
+        float: none;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    nav {
+        width: 25%;
+       
+    }
 }
